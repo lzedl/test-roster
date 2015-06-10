@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ActionsWindow</class>
+ <widget class="QWidget" name="ActionsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLineEdit" name="Command"/>
+   </item>
+   <item>
+    <widget class="QListWidget" name="Commands">
+     <item>
+      <property name="text">
+       <string>Meta: Edit</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ICQ: Edit</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ICQ: Message</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Jabber: Edit</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Jabber: Message</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VK: Edit</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VK: Message</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>Command</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Command</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>ActionsWindow</receiver>
+   <slot>filter(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>151</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>filter(QString)</slot>
+ </slots>
+</ui>

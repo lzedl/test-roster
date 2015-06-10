@@ -1,0 +1,62 @@
+Roster
+Формат для хранения данных:
+
+{
+    "account": "some name",
+    "contacts": [
+        {
+            "id": "some id"
+            "display_name": "some display name",
+            "self": [
+                {
+                    "name": "",
+                    "type": "icq",
+                    "id": "111111111"
+                },
+                {
+                    "name": "Домашний адрес",
+                    "type": "address",
+                    "id": {
+                        "country": "Russia",
+                        "city": "Moscow",
+                        "street": "",
+                        "house": ""
+                    }
+                }
+            ],
+            "records": [
+                {
+                    "name": "primary email",
+                    "description": "По жизненным вопросвам лучше писать сюда",
+                    "id": "contact@example.com",
+                    "type": "email",
+                },
+                {
+                    "name": "Основной телефон",
+                    "description": "",
+                    "id": "+79991112233",
+                    "type": "mobile"
+                },
+                {
+                    "name": "Рабочий телефон",
+                    "description": "Звонить по рабочим вопросам",
+                    "id": "+79991112234",
+                    "type": "mobile"
+                }
+            ]
+        }
+    ]
+}
+
+В элементах есть уже готовые пресеты, для быстрого добавления данных об этом контакте
+
+Типы:
+email
+address
+jabber
+icq
+skype
+vk
+facebook
+
+IM
